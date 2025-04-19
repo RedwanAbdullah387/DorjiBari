@@ -36,8 +36,10 @@
     }
 
     .logout{
+      background-color: var(--white_color);
       color:var(--white_color);
       font-family: var(--popins);
+      border-color: var(--white_color);
     }
        /* Add CSS styles for card view */
         .product-card {
@@ -172,10 +174,6 @@
           <li class="nav-item">
             <a class="CustomNavItem" href="{% url 'cart' %}">Cart</a>
           </li>
-          <li class="nav-item">
-            <a class="CustomNavItem" href="{% url 'orders' %}">Orders</a>
-        </li>
-
 
           <li class="nav-item">
             <a class="CustomNavItem" href="{% url 'contact' %}">Contact Us</a>
@@ -183,19 +181,17 @@
 
           
         </ul>
-        
-
+       
         <a href="{% url 'loginPage' %}" class="NavbarLoginSignUpButton">
           log in/Sign Up
         </a>
 
         <span>{{request.user}}</span>
         <span><a class="logout" href="{% url 'logoutuser' %}">Logout</a></span>
-
+        <button class="MyProfileButton"><a class="MyProfile" href="{% url 'userProfile' %}">My profile</a>
+        </button>
+  
       </div>
-      <button class="MyProfileButton"><a class="MyProfile" href="{% url 'userProfile' %}">My profile</a>
-      </button>
-
     </div>
   </nav>
   <!-- ======================= Navbar ============= -->

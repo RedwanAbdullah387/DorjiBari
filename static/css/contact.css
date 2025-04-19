@@ -41,148 +41,125 @@ h1,h2,h3,h4,h5,h6,p,img,br,span,div,section,nav{
 
 /*====================Navbar ================== */
 
-.ourCustomNav{
+.ourCustomNav {
     background-color: var(--blue_color);
-}
-
-
-
-.logo{
+    padding: 10px 0;
+  }
+  
+  /* =========== Logo ========== */
+  .logo {
     width: 150px;
     height: 65px;
-
-}
-
-.CustomNavItem{
-    color:var(--white_color);
+  }
+  
+  /* =========== Brand Text (optional) ========== */
+  .JamaBanaben {
+    color: var(--white_color);
+    font-size: 14px;
+    margin: 0;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* =========== Navigation Items ========== */
+  .CustomNavItem {
+    color: var(--white_color);
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     font-family: var(--popins);
-    padding-right: 12px;
-}
-
-.CustomNavItem:hover{
-    color:var(--black_color);
-}
-
-.dropdown-menu__Item{
+    padding: 8px 12px;
+    text-decoration: none;
+  }
+  
+  .CustomNavItem:hover {
+    color: var(--black_color);
+  }
+  
+  /* =========== Dropdown Menu Items ========== */
+  .dropdown-menu__Item {
     color: var(--mejenta_color);
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     font-family: var(--popins);
-    padding-left: 20px;
-
-
-}
-
-.dropdown-menu__Item:hover{
+    padding: 8px 20px;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu__Item:hover {
     color: var(--blue_color);
-}
-
-.CustomeDDMenu{
+  }
+  
+  /* =========== Dropdown Background ========== */
+  .CustomeDDMenu {
     background-color: var(--white_color);
-
-}
-.CustomeButton{
-    width: 108px;
-    height: 40px;
-    border-radius: 10px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* =========== Login/Signup Button ========== */
+  .NavbarLoginSignUpButton {
     background-color: var(--mejenta_color);
     color: var(--white_color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    font-family: var(--popins);
-    border: none;
-
-}
-.CustomeButton:hover{
-    color: var(--black_color);
-}
-.NavbarLoginSignUpButton{
-    background-color:#ffff00;
-    width: 112px;
-    height: 40px;
-    border-radius: 12px;
-    border: none;
-
-    padding-top: 8px;
-    color: var(--black_color);
-    font-size: 15px;
-    font-weight: 400;
-    font-family: var(--popins);
-
-}
-
-
-
-
-.JamaBanaben{
-    color: var(--white_color);
-}
-/*====================Navbar ================== */
-
-<style>
-  /* Parent container for centering all content */
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    text-align: center;
-    background-color: #f5f5f5; /* Light background for better visibility */
-    margin: 0; /* Ensure no default margin */
-  }
-
-
-  .contact-info {
-    padding: 30px;
-    border: 2px solid #007bff;
-    border-radius: 10px;
-    background-color: #fdfdfd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    text-align: center;
-
-  }
-
-  .contact-info h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #007bff;
-  }
-
-
-  .contact-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    padding: 8px 16px;
     border-radius: 8px;
-    background-color:#f9f9f9 ;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    color: #333;
-    width: 100%;
+    font-size: 16px;
+    font-family: var(--popins);
+    text-decoration: none;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+}
+  
+  .NavbarLoginSignUpButton:hover {
+    background-color: var(--white_color);
+    color: var(--mejenta_color);
+    border: 1px solid var(--mejenta_color);
+  }
+  
+  /* =========== Logout Button ========== */
+  .logout {
+    background-color: transparent;
+    border: 1px solid var(--white_color);
+    border-radius: 8px;
+    color: var(--white_color);
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: var(--popins);
+    text-decoration: none;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .logout:hover {
+    background-color: var(--white_color);
+    color: var(--blue_color);
+    border-color: var(--white_color);
+  }
+  
+  /* =========== My Profile Button ========== */
+  .MyProfileButton {
+    font-family: var(--popins);
+    background-color: var(--mejenta_color);
+    border: none;
+    border-radius: 8px;
+    margin-left: 12px;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .MyProfileButton:hover {
+    background-color: none;
+  }
+  
+  .MyProfile {
+  
+   
+    color: var(--white_color);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--popins)
   }
 
-  .contact-box i {
-    color: #007bff;
-    margin-right: 10px;
-    font-size: 20px;
-  }
-
-
-  h1 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #333;
-  }
-
-
-</style>

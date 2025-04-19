@@ -41,79 +41,100 @@ h1,h2,h3,h4,h5,h6,p,img,br,span,div,section,nav{
 
 
 /*====================Navbar ================== */
-
-.ourCustomNav{
+.ourCustomNav {
     background-color: var(--blue_color);
+    padding: 10px 0;
 }
 
-
-
-.logo{
+.logo {
     width: 150px;
     height: 65px;
-
 }
 
-.CustomNavItem{
-    color:var(--white_color);
+.JamaBanaben {
+    color: var(--white_color);
+    font-size: 14px;
+    margin: 0;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.CustomNavItem {
+    color: var(--white_color);
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     font-family: var(--popins);
-    padding-right: 12px;
+    padding: 8px 12px;
+    text-decoration: none;
 }
 
-.CustomNavItem:hover{
-    color:var(--black_color);
+.CustomNavItem:hover {
+    color: var(--black_color);
 }
 
-.dropdown-menu__Item{
+.dropdown-menu__Item {
     color: var(--mejenta_color);
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     font-family: var(--popins);
-    padding-left: 20px;
-
-
+    padding: 8px 20px;
+    text-decoration: none;
 }
 
-.dropdown-menu__Item:hover{
+.dropdown-menu__Item:hover {
     color: var(--blue_color);
 }
 
-.CustomeDDMenu{
+.CustomeDDMenu {
     background-color: var(--white_color);
-
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
 }
-.CustomeButton{
-    width: 108px;
-    height: 40px;
-    border-radius: 12px;
+
+.NavbarLoginSignUpButton {
+    width: auto;
+    color:#FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
     background-color: var(--mejenta_color);
-    color: var(--white_color);
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     font-family: var(--popins);
-    border: none;
-
-}
-.CustomeButton:hover{
-    color: var(--black_color);
-}
-
-.NavbarLoginSignUpButton{
-    background-color: ;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: none;
 }
 
 
 
-
-
-.JamaBanaben{
+.logout {
+    background-color: transparent;
+    border: 1px solid var(--white_color);
+    border-radius: 8px;
     color: var(--white_color);
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: var(--popins);
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
 }
+
+.logout:hover {
+    background-color: var(--white_color);
+    color: var(--blue_color);
+    border-color: var(--white_color);
+}
+
+
+
+
 /*====================Navbar ================== */
 /* ========================ItemsPart============= */
 
