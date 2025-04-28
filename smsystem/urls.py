@@ -47,7 +47,9 @@ urlpatterns = [
     path('userProfile/',j_view.userProfile,name='userProfile'),
 
     path('profileForm/', j_view.userProfile_add, name='profileForm'),
-    path('profileForm/edit_profile/', j_view.edit_profile, name='edit_profile')
+    path('profileForm/edit_profile/', j_view.edit_profile, name='edit_profile'),
+
+    path('chatbot/', j_view.chat_bot, name='chat_bot'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

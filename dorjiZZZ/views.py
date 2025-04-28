@@ -287,3 +287,9 @@ def add_orders(request):
         'form': form
     }
     return render(request, template_name='orderForm.html', context=context)
+
+def chat_bot(request):
+    if request.user.is_authenticated:
+        return render(request, 'gemini.html')
+    else:
+        return render(request, 'home.html')
